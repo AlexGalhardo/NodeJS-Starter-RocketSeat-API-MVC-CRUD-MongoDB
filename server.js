@@ -12,10 +12,20 @@ app.use(express.json());
 app.use(cors());
 
 // iniciando o DB
+/* local 
 mongoose.connect(
 	"mongodb://localhost:27017/nodeapi", 
 	{ useNewUrlParser: true }
 );
+*/
+
+
+// mlab
+mongoose.connect(
+	"mongodb://galhardo:galhardo159@ds127439.mlab.com:27439/nodejsapi",
+	{ useNewUrlParser: true }
+);
+
 // require('./src/models/Product'); // sem require-dir
 requireDir('./src/models'); // com require-dir
 
