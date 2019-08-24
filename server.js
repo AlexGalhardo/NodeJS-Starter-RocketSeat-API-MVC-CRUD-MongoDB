@@ -53,4 +53,8 @@ app.get('/', (req, res) => {
 // Rotas
 app.use('/api', require('./src/routes'));
 
-app.listen(3001);
+// localmente
+// app.listen(3001);
+
+// heroku port
+app.listen(process.env.PORT || 5000);
