@@ -20,12 +20,17 @@ mongoose.connect(
 */
 
 
-// mlab
+/* mlab
 mongoose.connect(
 	"mongodb://galhardo:galhardo159@ds127439.mlab.com:27439/nodejsapi",
 	{ useNewUrlParser: true }
-);
+);*/
 
+// mlab heroku
+mongoose.connect(
+	"mongodb://heroku_cqx80h1w:jqq1tm48lhvq9bhi0jdkt82dsq@ds139869.mlab.com:39869/heroku_cqx80h1w",
+	{ useNewUrlParser: true }
+);
 // require('./src/models/Product'); // sem require-dir
 requireDir('./src/models'); // com require-dir
 
