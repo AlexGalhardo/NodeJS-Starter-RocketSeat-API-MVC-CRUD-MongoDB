@@ -20,18 +20,18 @@ routes.get('/', (req, res) => {
 // acessar /api/products
 
 // LER TODOS OS DADOS CADASTRADOS
-routes.get('/products', ProductController.index);
+routes.get('/games', ProductController.index);
 
 // BUSCAR DADO COM ID ESPECÍFICO
-routes.get('/products/:id', ProductController.show);
+routes.get('/games/:id', ProductController.show);
 
 // METODO CREATE
-routes.post('/products', ProductController.create);
+routes.post('/games', ProductController.create);
 
 // UPDATE DADO
-routes.put('/products/:id', ProductController.update);
+routes.put('/games/:id', ProductController.update);
 
 // DELETE DADO
-routes.delete('/products/:id', ProductController.delete);
+routes.delete('/games/:id', ProductController.delete);
 
 module.exports = routes;
